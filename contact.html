@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9VRTC0FH55"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9VRTC0FH55');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | TurkBridge Consulting & Trade</title>
+  <meta name="description" content="Get in touch with TurkBridge for consulting, education, and trade opportunities in Turkey. We're here to help you achieve your goals.">
+  
+  <!-- ===== ICONS & STYLES ===== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- SKIP LINK -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container header-container">
+      <div class="logo-title">
+        <img src="imagez/1.png" alt="TurkBridge Logo" class="logo" width="50" height="50">
+        <h1>TurkBridge Consulting & Trade</h1>
+      </div>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mainNav">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <nav id="mainNav" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="announcements.html">Announcements</a></li>
+          <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-content">
+    <!-- CONTACT HERO -->
+    <section class="contact-hero">
+      <div class="container">
+        <div class="contact-hero-content">
+          <h1>Get In Touch</h1>
+          <p>Ready to explore opportunities in Turkey? We're here to help you every step of the way.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- CONTACT FORM -->
+          <div class="contact-form-container">
+            <h2>Send Us a Message</h2>
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required>
+                <span class="error-message" id="nameError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error-message" id="emailError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+                <span class="error-message" id="phoneError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="service">Service Interested In</label>
+                <select id="service" name="service">
+                  <option value="">Select a service</option>
+                  <option value="education">Education Consulting</option>
+                  <option value="business">Business Consulting</option>
+                  <option value="trade">Trade Solutions</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Message *</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+                <span class="error-message" id="messageError"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary submit-btn">
+                <span class="btn-text">Send Message</span>
+                <div class="loading-spinner" style="display: none;">
+                  <i class="fas fa-spinner fa-spin"></i>
+                </div>
+              </button>
+            </form>
+
+            <!-- SUCCESS MESSAGE -->
+            <div id="successMessage" class="success-message" style="display: none;">
+              <i class="fas fa-check-circle"></i>
+              <h3>Thank You!</h3>
+              <p>Your message has been sent successfully. We'll get back to you within 24 hours.</p>
+            </div>
+          </div>
+
+          <!-- CONTACT INFO -->
+          <div class="contact-info">
+            <h2>Contact Information</h2>
+            <div class="contact-info-grid">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-details">
+                  <h3>Visit Us</h3>
+                  <p>Istanbul, Turkey</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-details">
+                  <h3>Call Us</h3>
+                  <p><a href="tel:+901234567890">+90 123 456 7890</a></p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-details">
+                  <h3>Email Us</h3>
+                  <p><a href="mailto:info@turkbridge.com">info@turkbridge.com</a></p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div class="contact-details">
+                  <h3>Working Hours</h3>
+                  <p>Monday - Friday: 9:00 - 18:00</p>
+                  <p>Saturday: 10:00 - 16:00</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- QUICK ACTIONS -->
+            <div class="quick-actions">
+              <h3>Quick Actions</h3>
+              <div class="action-buttons">
+                <a href="tel:+901234567890" class="btn btn-secondary">
+                  <i class="fas fa-phone"></i>
+                  Call Now
+                </a>
+                <a href="mailto:info@turkbridge.com" class="btn btn-secondary">
+                  <i class="fas fa-envelope"></i>
+                  Email Us
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq-section">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <h3>How quickly do you respond to inquiries?</h3>
+            <p>We typically respond within 2-4 hours during business hours, and always within 24 hours.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Do you offer free consultations?</h3>
+            <p>Yes, we offer free initial consultations for all our services to understand your needs.</p>
+          </div>
+          <div class="faq-item">
+            <h3>What languages do you support?</h3>
+            <p>We provide support in English, Turkish, Arabic, and Russian.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Can you help with visa processes?</h3>
+            <p>Yes, we assist with student and business visa applications for Turkey.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>TurkBridge</h3>
+          <p>Connecting you to opportunities in Turkey through reliable consulting, trade, and education support.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="announcements.html">Announcements</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Contact Info</h3>
+          <address class="footer-links">
+            <p><i class="fas fa-map-marker-alt"></i> Istanbul, Turkey</p>
+            <p><i class="fas fa-phone"></i> <a href="tel:+901234567890">+90 123 456 7890</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:info@turkbridge.com">info@turkbridge.com</a></p>
+          </address>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; <span id="current-year">2025</span> TurkBridge Consulting & Trade | All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- SCRIPTS -->
+  <script src="script.js"></script>
+</body>
+</html>
